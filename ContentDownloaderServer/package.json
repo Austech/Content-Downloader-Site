@@ -1,0 +1,10 @@
+{
+  "name": "ContentDownloaderServer",
+  "version": "0.0.0",
+  "description": "ContentDownloaderServer",
+  "main": "app.js",
+  "author": {
+    "name": "Austin",
+    "email": ""
+  }
+}
