@@ -19,10 +19,20 @@ socket.on("connection", function (client) {
         var url = data["url"];
         var type = data["type"];
         
+        var extension = "mp4";
         console.log(data);
         
         var tempCount = counter++;
-        var dl = child_process.spawn("python", ["-m", "youtube_dl", "--no-playlist", url, "-o", "./media/tmp/" + tempCount + "/%(title)s.%(ext)s"]);
+        var args = ["-m", "youtube_dl", "--no-playlist"];
+
+        if (type == "audio")
+        {
+            extension = "mp3";
+            args.push("--extract-audio");
+        }
+
+        args.push(url, "-o", "./media/tmp/" + tempCount + "/%(title)s." + extension);
+        var dl = child_process.spawn("python", args);
 
         dl.stdout.on("data", function (data) {
             data = data.toString();
@@ -32,9 +42,10 @@ socket.on("connection", function (client) {
                 client.emit("progress", { pr: percent });
             }
 
-            if (data.indexOf("Destination") > -1) {
-                var destination = data.substring(29, data.indexOf("\n"));
+            if (data.indexOf("[ffmpeg]") > -1) {
+                var destination = data.substring(data.indexOf("media\\tmp\\") + 5, data.indexOf("\n") - 1);
                 console.log(destination);
+
                 client.emit("link", { url: destination });
             }
         });
