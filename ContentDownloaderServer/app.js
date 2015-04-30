@@ -7,7 +7,7 @@ var httpServer = require("http").createServer(function (request, response) {
     request.addListener('end', function () {
         fileServer.serve(request, response);
     }).resume();
-}).listen(8080);
+}).listen(1994);
 var socket = require("socket.io")(httpServer);
 
 var counter = 0;

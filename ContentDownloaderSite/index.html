@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Content Downloader</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +87,7 @@
         <script src="js/socket.io.js"></script>
         <script src="js/contentclient.js"></script>
     <script>
-        var serverUrl = "http://localhost:8080";
+        var serverUrl = "http://localhost:1994";
         var client = new contentclient();
         $("body").ready(function () {
             client.onSuccess = showControls;

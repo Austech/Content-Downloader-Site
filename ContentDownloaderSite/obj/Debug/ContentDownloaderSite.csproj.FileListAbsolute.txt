@@ -1,6 +1,5 @@
 C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderSite\bin\ContentDownloaderSite.dll.config
 C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderSite\bin\ContentDownloaderSite.dll
 C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderSite\bin\ContentDownloaderSite.pdb
-C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderSite\obj\Debug\ContentDownloaderSite.csprojResolveAssemblyReference.cache
 C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderSite\obj\Debug\ContentDownloaderSite.dll
 C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderSite\obj\Debug\ContentDownloaderSite.pdb

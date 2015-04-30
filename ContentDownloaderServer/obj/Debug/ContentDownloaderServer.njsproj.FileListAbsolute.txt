@@ -1,0 +1,2 @@
+C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderServer\obj\Debug\ContentDownloaderServer.njsprojResolveAssemblyReference.cache
+C:\Users\Austin\Documents\Visual Studio 2013\Projects\ContentDownloaderSite\ContentDownloaderServer\bin\Microsoft.NodejsTools.WebRole.dll
