@@ -50,6 +50,10 @@ socket.on("connection", function (client) {
             }
         });
         
+        dl.on("close", function (code) {
+            client.emit("finished", { code: code });
+        });
+        
 
         if (type == "video") {
 

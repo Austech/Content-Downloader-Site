@@ -93,6 +93,7 @@
             client.onSuccess = showControls;
             client.progress = downloadProgress;
             client.downloadLink = getLink;
+            client.downloadFinished = downloadFinished;
             client.connect(serverUrl);
             
             $("#dl-progress").hide();
@@ -108,11 +109,16 @@
             $("#download-controls").fadeIn(1000);
             $("#second-header").text("Connected");
         }
-
         function getLink(data)
         {
             console.log(data);
             $("#dl-button").attr("href", serverUrl + data["url"]);
+        }
+
+
+        function downloadFinished() {
+            $("#dl-button").fadeIn(1000);
+            $("#second-header").text("Download Complete!");
         }
 
         function downloadProgress(data)
@@ -122,12 +128,6 @@
             $("#download-controls").addClass("hide");
             $("#dl-progress").text(percent.toString() + "%");
             $("#second-header").text("Waiting for server to download...");
-
-            if(percent >= 100)
-            {
-                $("#dl-button").fadeIn(1000);
-                $("#second-header").text("Download Complete!");
-            }
         }
 
         function downloadVid(type)
