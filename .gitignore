@@ -17,6 +17,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#youtube stuff
+*youtube_dl/
+
+#node modules
+*node_modules/
+#media
+/ContentDownloaderServer/media
+
 # =========================
 # Operating System Files
 # =========================
@@ -30,7 +38,6 @@ $RECYCLE.BIN/
 
 # Thumbnails
 ._*
-
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
